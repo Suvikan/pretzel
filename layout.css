@@ -1,0 +1,140 @@
+/* MOBILE FIRST!*/
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* - - TEKSTIELEMENTTIEN SÄÄNNÖT - - */
+
+h2 {
+    text-transform: uppercase;
+}
+h3 {
+    text-transform: uppercase;
+    margin-block-end: 0.5rem;
+}
+p {
+    padding-block-end: 1rem;
+}
+
+#specialtext {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+.opacity {
+    opacity: 0.5;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/* - - TAGien SÄÄNNÖT - - */
+#special {
+    background-color: #697F87;
+    background-image: url(./images/special-bg.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    color: white;
+    padding: 1rem;
+}
+
+#wrapper {
+    background-image: url(./images/grunge.png);
+    background-repeat: repeat-y;
+    padding: 1rem;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-bottom: solid 0.2rem rgb(0, 0, 0, 0.1); 
+    margin-block-end: 1rem;
+
+}
+header > * {
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+nav {
+    margin: 1rem;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+ul > * {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+}
+#currentLink {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+ }
+
+#main img {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+#sidebar {
+
+}
+table {
+    border-bottom: solid 0.2rem rgb(0, 0, 0, 0.1); 
+    width: 100%;
+    margin-block-end: 1rem;    
+    padding: 1rem;
+}
+tr, td {
+    width: 50%;
+}
+
+.callout {
+    background-color: #F6E8C8;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-block-end: 1rem;
+
+}
+footer {
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-top: solid 0.2rem rgb(0, 0, 0, 0.1); 
+    padding: 1rem;
+
+}
+footer > * {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;   
+}
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
