@@ -59,7 +59,7 @@ header > * {
     flex-grow: 1;
     
 }
-header img {
+header a img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,7 +79,12 @@ ul > * {
     flex-grow: 1;
     text-align: center;
 }
-nav a {
+#logomark {
+    flex-basis: 100%;
+    order: 1;
+}
+
+nav a:link, nav a:visited {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
@@ -87,19 +92,20 @@ nav a {
     font-weight: bold;
     opacity: 0.5;
 }
-#currentLink {
+nav a.current{
     color: black;
     opacity: 1;
     font-weight: bold;
- }
+}
+section p a:link, section p a:visited, table a:link, table a:visited {
+    color: #3EA3C4;
+}
 
 #main img {
     width: 100%;
     margin: 0.5rem 0;
 }
-#sidebar {
 
-}
 table {
     border-bottom: solid 0.2rem rgb(0, 0, 0, 0.1); 
     width: 100%;
