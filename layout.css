@@ -9,13 +9,16 @@ body {
 /* - - TEKSTIELEMENTTIEN SÄÄNNÖT - - */
 
 h2 {
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 h3 {
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin-block-end: 0.5rem;
 }
 p {
+    font-size: 1rem;
     padding-block-end: 1rem;
 }
 
@@ -59,7 +62,7 @@ header > * {
     flex-grow: 1;
     
 }
-header a img {
+header figure {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -78,6 +81,9 @@ ul > * {
     flex-basis: 0;
     flex-grow: 1;
     text-align: center;
+}
+.bottomlink {
+    display: none;
 }
 #logomark {
     flex-basis: 100%;
@@ -101,9 +107,13 @@ section p a:link, section p a:visited, table a:link, table a:visited {
     color: #3EA3C4;
 }
 
+#mainpretz {
+    display: block;
+    margin: 0.5rem 0;
+}
+
 #main img {
     width: 100%;
-    margin: 0.5rem 0;
 }
 
 table {
@@ -138,9 +148,90 @@ footer > * {
     flex-grow: 1;
     text-align: center;   
 }
-footer img {
+footer figure {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
+}
+
+
+/* Media query, tablet näkymä */
+
+@media only screen and (min-width: 426px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    
+    }
+    header figure {
+        flex-basis: 0;
+        flex-grow: 2; 
+        margin: 0.8rem;
+    }
+  
+    header nav {
+        flex-basis: 100%;
+        flex-grow: 5;
+    }
+    nav {
+        display: block;
+        margin-block-start: auto;
+        margin-block-end: auto;
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-block-end: 0.7rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-block-end: 0.7rem;
+    }
+    p {
+        font-size: 1.3rem;
+        padding-block-end: 1.3rem;
+    }
+    table a:link {
+        font-size: 1.3rem;
+    }
+}
+
+/* Media query, desktop näkymä */
+
+@media only screen and (min-width: 769px) {
+ 
+    header figure {
+        margin-inline-end: 10rem;
+    }
+
+    .bottomlink {
+        display: block;
+        text-transform: none;
+        font-weight: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    li {
+        text-align: left;
+    }
+    #mainwrappi
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #mainwrappi > * {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    #main {
+        flex-grow: 3;
+        margin-inline-end: 3rem;
+    }
+    #sidebar {
+        flex-grow: 2;
+    }
 }
